@@ -13,9 +13,11 @@
 		A50E198E272140CF00E14B1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50E198C272140CF00E14B1D /* Main.storyboard */; };
 		A50E1990272140D200E14B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50E198F272140D200E14B1D /* Assets.xcassets */; };
 		A50E1993272140D200E14B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50E1991272140D200E14B1D /* LaunchScreen.storyboard */; };
+		C54E178A1DBF82B0D668EE61 /* Pods_WebScrapingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71E93DCE8DC4FD6332FAE45 /* Pods_WebScrapingSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A13B93D2588AB72E2B9623E2 /* Pods-WebScrapingSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebScrapingSwift.release.xcconfig"; path = "Target Support Files/Pods-WebScrapingSwift/Pods-WebScrapingSwift.release.xcconfig"; sourceTree = "<group>"; };
 		A50E1983272140CF00E14B1D /* WebScrapingSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebScrapingSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50E1986272140CF00E14B1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A50E1988272140CF00E14B1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		A50E198F272140D200E14B1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A50E1992272140D200E14B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A50E1994272140D200E14B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A71E93DCE8DC4FD6332FAE45 /* Pods_WebScrapingSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebScrapingSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABFAECF54E64525DACA95FF1 /* Pods-WebScrapingSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebScrapingSwift.debug.xcconfig"; path = "Target Support Files/Pods-WebScrapingSwift/Pods-WebScrapingSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C54E178A1DBF82B0D668EE61 /* Pods_WebScrapingSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				A50E1985272140CF00E14B1D /* WebScrapingSwift */,
 				A50E1984272140CF00E14B1D /* Products */,
+				C7B71544A2DDB086FA727717 /* Pods */,
+				F629EC21699CF650E491094E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = WebScrapingSwift;
 			sourceTree = "<group>";
 		};
+		C7B71544A2DDB086FA727717 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABFAECF54E64525DACA95FF1 /* Pods-WebScrapingSwift.debug.xcconfig */,
+				A13B93D2588AB72E2B9623E2 /* Pods-WebScrapingSwift.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F629EC21699CF650E491094E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A71E93DCE8DC4FD6332FAE45 /* Pods_WebScrapingSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A50E1997272140D200E14B1D /* Build configuration list for PBXNativeTarget "WebScrapingSwift" */;
 			buildPhases = (
+				407EB9EC8FF22CEAA809060E /* [CP] Check Pods Manifest.lock */,
 				A50E197F272140CF00E14B1D /* Sources */,
 				A50E1980272140CF00E14B1D /* Frameworks */,
 				A50E1981272140CF00E14B1D /* Resources */,
+				33D3E63D088A3C5D25E5F62C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33D3E63D088A3C5D25E5F62C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebScrapingSwift/Pods-WebScrapingSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebScrapingSwift/Pods-WebScrapingSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebScrapingSwift/Pods-WebScrapingSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		407EB9EC8FF22CEAA809060E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebScrapingSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A50E197F272140CF00E14B1D /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		A50E1998272140D200E14B1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABFAECF54E64525DACA95FF1 /* Pods-WebScrapingSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		A50E1999272140D200E14B1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A13B93D2588AB72E2B9623E2 /* Pods-WebScrapingSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
